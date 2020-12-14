@@ -51,7 +51,7 @@ int main()
 
 		time(&end_t);
 		diff_t = difftime(end_t, start_t);
-		Sleep((1000 * (seconds / (size / 2)) - diff_t));
+		Sleep((1000 * (seconds / (size / 2))) - diff_t);
 		system("cls");
 	}
 	// Time out display
@@ -92,5 +92,4 @@ int main()
 	Beep(750, 200);
 	Beep(1000, 400);
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
 }
